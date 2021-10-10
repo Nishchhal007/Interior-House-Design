@@ -1,0 +1,118 @@
+*{
+margin: 0px;
+padding: 0;
+font-family: sans-serif;
+
+}
+.banner{
+    width :100%;
+    height: 100vh;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0, 0.50)),url(b2.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   
+    width: 12%;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+content: '';
+height: 3px;
+width: 0%;
+background: paleturquoise;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top : 50%;
+   transform: translateY(-50%);
+   text-align: center;
+}
+.content h1{
+font-size: 50px;
+margin-top: 80px;
+
+}
+.content p{
+
+    font-size: 40px;
+        margin: 20px;
+        line-height: 25px;
+        
+}  
+#shiny-shadow {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background: #1c2541;
+}
+
+button {
+    
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 50px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+
+span {
+    z-index: 20;  
+}
+
+
+  button:after {
+    content: '';
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -100px;
+      background: white;
+      width: 50px;
+      height: 125px;
+      opacity: 20%;
+      transform: rotate(-45deg);
+  }
+  
+  button:hover:after {
+    left: 120%;
+    transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+     -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+  }
